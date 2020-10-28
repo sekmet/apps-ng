@@ -9,6 +9,7 @@ import {
   StopCircle as StopCircleIcon,
   // FileFunction as FileFunctionIcon,
   Settings as SettingsIcon,
+  Lock as LockIcon,
   Users as UsersIcon,
   Sidebar as SidebarIcon,
   Box as BoxIcon
@@ -88,6 +89,8 @@ const NavBar = () => {
       <NavBarButton href="WALLET" name={t('Wallet')} icon={StopCircleIcon} />
       <NavItemSpacer />
       <NavBarButton href="HELLOWORLDAPP" name={t('App')} icon={BoxIcon} />
+      <NavItemSpacer />
+      <NavBarButton href="PASSWORDSAPP" name={t('Credentials')} icon={LockIcon} />
       <NavItemSpacer />
       <NavBarButtonWrapper onClick={() => window.open('/legacy.html', '_blank')}>
         <SidebarIcon size={21} />
